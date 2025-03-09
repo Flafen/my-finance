@@ -1,0 +1,18 @@
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__icons_wrapper {
+  display: flex;
+  gap: 15px;
+  a {
+    color: var(--text-color);
+    font-size: 20px;
+
+    &:hover {
+      color: rgb(0, 85, 255);
+    }
+  }
+}
