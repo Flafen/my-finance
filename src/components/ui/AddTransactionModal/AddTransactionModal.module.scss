@@ -1,0 +1,71 @@
+.modalContent {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  border: 1px solid var(--border-line-color);
+}
+
+.modalHeader {
+  border-bottom: 1px solid var(--border-line-color);
+}
+
+.modalFooter {
+  border-top: 1px solid var(--border-line-color);
+}
+
+.modalBackdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important; // Полупрозрачный серый цвет
+}
+
+[data-theme='dark'] .modalBackdrop {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ) !important; // Полупрозрачный белый цвет для темной темы
+}
+
+.inputField {
+  background-color: var(--second-background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-line-color);
+
+  &:focus {
+    background-color: var(--second-background-color);
+    color: var(--text-color);
+    border-color: var(--lite-blue-text-color);
+    box-shadow: 0 0 0 0.2rem rgba(138, 137, 210, 0.25);
+  }
+}
+
+.selectField {
+  background-color: var(--second-background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-line-color);
+
+  &:focus {
+    border-color: var(--lite-blue-text-color);
+    box-shadow: 0 0 0 0.2rem rgba(138, 137, 210, 0.25);
+  }
+}
+
+.buttonPrimary {
+  background-color: var(--lite-blue-text-color);
+  color: var(--inverted-text-color);
+  border: none;
+
+  &:hover {
+    background-color: darken(#8a89d2, 10%);
+  }
+}
+
+.buttonSecondary {
+  background-color: var(--grey-text-color);
+  color: var(--inverted-text-color);
+  border: none;
+
+  &:hover {
+    background-color: darken(#7184ad, 10%);
+  }
+}

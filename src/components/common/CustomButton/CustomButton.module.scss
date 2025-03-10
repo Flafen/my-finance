@@ -1,0 +1,55 @@
+.button {
+  padding: 10px 20px;
+  max-height: 45px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-wrap: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--second-background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-line-color);
+
+  &:hover {
+    background-color: var(--hover-background);
+  }
+
+  &.primary {
+    background-color: var(--lite-blue-text-color);
+    color: var(--inverted-text-color);
+
+    &:hover {
+      background-color: darken(#8a89d2, 10%);
+    }
+  }
+
+  &.success {
+    background-color: var(--success-color);
+    color: var(--inverted-text-color);
+
+    &:hover {
+      background-color: darken(#4caf50, 10%);
+    }
+  }
+
+  &.error {
+    background-color: var(--error-color);
+    color: var(--inverted-text-color);
+
+    &:hover {
+      background-color: darken(#ff9800, 10%);
+    }
+  }
+
+  &.denied {
+    background-color: var(--denied-color);
+    color: var(--inverted-text-color);
+
+    &:hover {
+      background-color: darken(#f44336, 10%);
+    }
+  }
+}

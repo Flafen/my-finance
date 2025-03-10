@@ -1,18 +1,21 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Transaction } from '../../components/ui/AddTransactionModal/AddTransactionModal';
+import userTransactions from '../../assets/data/userTransactions.json';
 
-interface Transaction {
-  date: Date;
-  amount: number;
-  action: 'deposit' | 'withdraw';
-  category?:
+const transactions = userTransactions.transactionHistory.map((transaction) => ({
+  ...transaction,
+  date: new Date(transaction.date),
+  action: transaction.action as 'withdraw' | 'deposit',
+  category: transaction.category as
     | 'Food'
     | 'Transport'
     | 'Healthcare'
     | 'Education'
     | 'Shops'
     | 'Entertaiment'
-    | 'Other';
-}
+    | 'Other'
+    | undefined,
+}));
 
 export interface User {
   id: string;
@@ -25,35 +28,11 @@ const initialState: User = {
   id: '1',
   name: 'Vlad Nasulin',
   email: 'mail@mail.ru',
-  transactionHistory: [
-    {
-      date: new Date('18.11.2014'),
-      amount: 132.22,
-      action: 'withdraw',
-      category: 'Education',
-    },
-    {
-      date: new Date('19.11.2014'),
-      amount: 245.52,
-      action: 'withdraw',
-      category: 'Entertaiment',
-    },
-    {
-      date: new Date('20.11.2014'),
-      amount: 6540,
-      action: 'deposit',
-    },
-    {
-      date: new Date('28.11.2014'),
-      amount: 920.9,
-      action: 'withdraw',
-      category: 'Transport',
-    },
-  ],
+  transactionHistory: transactions,
 };
 
 const userInfoSlice = createSlice({
-  name: 'auth',
+  name: 'userInfo',
   initialState,
   reducers: {
     newTransaction(state, action: PayloadAction<Transaction>) {
