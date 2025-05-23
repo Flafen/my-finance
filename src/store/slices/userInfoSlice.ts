@@ -21,7 +21,7 @@ export interface User {
   id: string;
   name: string;
   email: string;
-  transactionHistory: Transaction[] | [];
+  transactionHistory?: Transaction[] | [];
 }
 
 const initialState: User = {
@@ -36,7 +36,10 @@ const userInfoSlice = createSlice({
   initialState,
   reducers: {
     newTransaction(state, action: PayloadAction<Transaction>) {
-      state.transactionHistory = [...state.transactionHistory, action.payload];
+      state.transactionHistory = [
+        ...(state.transactionHistory || []),
+        action.payload,
+      ];
     },
   },
 });

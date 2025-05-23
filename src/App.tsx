@@ -5,27 +5,38 @@ import Footer from './components/layout/Footer/Footer';
 import HomePage from './pages/HomePage/HomePage';
 import WalletsPage from './pages/WalletsPage/WalletsPage';
 import './styles/index.scss';
-import { Provider } from 'react-redux';
-import store from './store/store';
+import { useAppSelector } from './utils/hooks';
+import Login from './pages/Login/Login';
 
 const App: React.FC = () => {
+  const { isAuthenticated } = useAppSelector((state) => state.auth);
+
   return (
-    <Provider store={store}>
-      <Router>
-        <Header />
+    <Router>
+      {isAuthenticated ? (
+        <>
+          <Header />
+          <Routes>
+            <Route
+              path="/"
+              element={<HomePage />}
+            />
+            <Route
+              path="/wallets"
+              element={<WalletsPage />}
+            />
+          </Routes>
+          <Footer />
+        </>
+      ) : (
         <Routes>
           <Route
-            path="/"
-            element={<HomePage />}
-          />
-          <Route
-            path="/wallets"
-            element={<WalletsPage />}
+            path="*"
+            element={<Login />}
           />
         </Routes>
-        <Footer />
-      </Router>
-    </Provider>
+      )}
+    </Router>
   );
 };
 

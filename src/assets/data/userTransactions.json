@@ -1,5 +1,252 @@
 {
   "transactionHistory": [
+    { "date": "2024-10-01", "amount": 10000, "action": "deposit" },
+    {
+      "date": "2024-10-02",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-10-03",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2024-10-04",
+      "amount": 200,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-10-05",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-10-06",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-10-07",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-10-08",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-10-09",
+      "amount": 50,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    { "date": "2024-10-10", "amount": 500, "action": "deposit" },
+    {
+      "date": "2024-10-11",
+      "amount": 130,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-10-12",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Other"
+    },
+    {
+      "date": "2024-10-13",
+      "amount": 200,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-10-14",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    { "date": "2024-10-15", "amount": 300, "action": "deposit" },
+    {
+      "date": "2024-10-16",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2024-10-17",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-10-18",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-10-19",
+      "amount": 110,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    { "date": "2024-10-20", "amount": 1000, "action": "deposit" },
+    {
+      "date": "2024-10-21",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-10-22",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2024-10-23",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-10-24",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Other"
+    },
+    {
+      "date": "2024-10-25",
+      "amount": 200,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-10-26",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-10-27",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-10-28",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-10-29",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    { "date": "2024-10-30", "amount": 500, "action": "deposit" },
+    {
+      "date": "2024-11-01",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-11-02",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-11-03",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-11-04",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-11-05",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-11-06",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    { "date": "2024-11-07", "amount": 1000, "action": "deposit" },
+    {
+      "date": "2024-11-08",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Other"
+    },
+    {
+      "date": "2024-11-09",
+      "amount": 110,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-11-10",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-11-11",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-11-12",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-11-13",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-11-14",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    { "date": "2024-11-15", "amount": 500, "action": "deposit" },
+    {
+      "date": "2024-11-16",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-11-17",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
     {
       "date": "2024-11-18",
       "amount": 132.22,
@@ -12,16 +259,79 @@
       "action": "withdraw",
       "category": "Entertaiment"
     },
+    { "date": "2024-11-20", "amount": 6540, "action": "deposit" },
     {
-      "date": "2024-11-20",
-      "amount": 6540,
-      "action": "deposit"
+      "date": "2024-11-21",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-11-22",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2024-11-23",
+      "amount": 200,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-11-24",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-11-25",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-11-26",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-11-27",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-11-28",
+      "amount": 50,
+      "action": "withdraw",
+      "category": "Transport"
     },
     {
       "date": "2024-11-29",
       "amount": 920.9,
       "action": "withdraw",
       "category": "Transport"
+    },
+    { "date": "2024-12-01", "amount": 1000, "action": "deposit" },
+    {
+      "date": "2024-12-02",
+      "amount": 130,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-12-03",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Other"
+    },
+    {
+      "date": "2024-12-04",
+      "amount": 200,
+      "action": "withdraw",
+      "category": "Entertaiment"
     },
     {
       "date": "2024-12-05",
@@ -30,15 +340,78 @@
       "category": "Food"
     },
     {
+      "date": "2024-12-06",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-12-07",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-12-08",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-12-09",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
       "date": "2024-12-10",
       "amount": 300,
       "action": "withdraw",
       "category": "Healthcare"
     },
+    { "date": "2024-12-11", "amount": 500, "action": "deposit" },
     {
-      "date": "2024-12-15",
-      "amount": 2000,
-      "action": "deposit"
+      "date": "2024-12-12",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-12-13",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-12-14",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    { "date": "2024-12-15", "amount": 2000, "action": "deposit" },
+    {
+      "date": "2024-12-16",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2024-12-17",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2024-12-18",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2024-12-19",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Other"
     },
     {
       "date": "2024-12-20",
@@ -47,10 +420,53 @@
       "category": "Shops"
     },
     {
+      "date": "2024-12-21",
+      "amount": 110,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2024-12-22",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2024-12-23",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2024-12-24",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
       "date": "2024-12-25",
       "amount": 100,
       "action": "withdraw",
       "category": "Other"
+    },
+    { "date": "2025-01-01", "amount": 3000, "action": "deposit" },
+    {
+      "date": "2025-01-02",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-03",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2025-01-04",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
     },
     {
       "date": "2025-01-05",
@@ -59,15 +475,78 @@
       "category": "Food"
     },
     {
+      "date": "2025-01-06",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2025-01-07",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2025-01-08",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-01-09",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Other"
+    },
+    {
       "date": "2025-01-10",
       "amount": 120,
       "action": "withdraw",
       "category": "Transport"
     },
+    { "date": "2025-01-11", "amount": 1000, "action": "deposit" },
     {
-      "date": "2025-01-15",
-      "amount": 3000,
-      "action": "deposit"
+      "date": "2025-01-12",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-13",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2025-01-14",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    { "date": "2025-01-15", "amount": 3000, "action": "deposit" },
+    {
+      "date": "2025-01-16",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2025-01-17",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2025-01-18",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    {
+      "date": "2025-01-19",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Other"
     },
     {
       "date": "2025-01-20",
@@ -76,11 +555,36 @@
       "category": "Entertaiment"
     },
     {
+      "date": "2025-01-21",
+      "amount": 110,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2025-01-22",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2025-01-23",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2025-01-24",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
       "date": "2025-01-25",
       "amount": 250,
       "action": "withdraw",
       "category": "Education"
     },
+    { "date": "2025-02-01", "amount": 1500, "action": "deposit" },
     {
       "date": "2025-02-02",
       "amount": 400,
@@ -88,15 +592,53 @@
       "category": "Healthcare"
     },
     {
-      "date": "2025-02-07",
-      "amount": 1500,
-      "action": "deposit"
+      "date": "2025-02-03",
+      "amount": 150,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-04",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2025-02-05",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
+    },
+    {
+      "date": "2025-02-06",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    { "date": "2025-02-07", "amount": 1500, "action": "deposit" },
+    {
+      "date": "2025-02-08",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2025-02-09",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
     },
     {
       "date": "2025-02-10",
       "amount": 700,
       "action": "withdraw",
       "category": "Shops"
+    },
+    {
+      "date": "2025-02-11",
+      "amount": 80,
+      "action": "withdraw",
+      "category": "Other"
     },
     {
       "date": "2025-02-12",
@@ -111,15 +653,53 @@
       "category": "Food"
     },
     {
+      "date": "2025-02-14",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
       "date": "2025-02-15",
       "amount": 800,
       "action": "withdraw",
       "category": "Transport"
     },
     {
-      "date": "2025-02-19",
-      "amount": 2500,
-      "action": "deposit"
+      "date": "2025-02-16",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
+      "date": "2025-02-17",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
+    },
+    {
+      "date": "2025-02-18",
+      "amount": 60,
+      "action": "withdraw",
+      "category": "Transport"
+    },
+    { "date": "2025-02-19", "amount": 2500, "action": "deposit" },
+    {
+      "date": "2025-02-20",
+      "amount": 110,
+      "action": "withdraw",
+      "category": "Food"
+    },
+    {
+      "date": "2025-02-21",
+      "amount": 70,
+      "action": "withdraw",
+      "category": "Entertaiment"
+    },
+    {
+      "date": "2025-02-22",
+      "amount": 90,
+      "action": "withdraw",
+      "category": "Healthcare"
     },
     {
       "date": "2025-02-23",
@@ -128,10 +708,22 @@
       "category": "Entertaiment"
     },
     {
+      "date": "2025-02-24",
+      "amount": 100,
+      "action": "withdraw",
+      "category": "Education"
+    },
+    {
       "date": "2025-02-25",
       "amount": 300,
       "action": "withdraw",
       "category": "Education"
+    },
+    {
+      "date": "2025-02-26",
+      "amount": 120,
+      "action": "withdraw",
+      "category": "Shops"
     },
     {
       "date": "2025-02-27",
@@ -139,17 +731,14 @@
       "action": "withdraw",
       "category": "Healthcare"
     },
+    { "date": "2025-03-01", "amount": 1000, "action": "deposit" },
     {
       "date": "2025-03-02",
       "amount": 600,
       "action": "withdraw",
       "category": "Shops"
     },
-    {
-      "date": "2025-03-03",
-      "amount": 1000,
-      "action": "deposit"
-    },
+    { "date": "2025-03-03", "amount": 1000, "action": "deposit" },
     {
       "date": "2025-03-03",
       "amount": 200,
@@ -168,11 +757,7 @@
       "action": "withdraw",
       "category": "Transport"
     },
-    {
-      "date": "2025-03-06",
-      "amount": 3500,
-      "action": "deposit"
-    },
+    { "date": "2025-03-06", "amount": 3500, "action": "deposit" },
     {
       "date": "2025-03-07",
       "amount": 700,
@@ -215,11 +800,7 @@
       "action": "withdraw",
       "category": "Transport"
     },
-    {
-      "date": "2025-03-11",
-      "amount": 3500,
-      "action": "deposit"
-    },
+    { "date": "2025-03-11", "amount": 3500, "action": "deposit" },
     {
       "date": "2025-03-12",
       "amount": 700,

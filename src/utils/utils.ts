@@ -1,7 +1,4 @@
-import {
-  BalanceHistory,
-  DailyBalance,
-} from '../components/charts/BalanceHistoryChart/BalanceHistoryChart';
+import { BalanceHistory, DailyBalance } from '../types/types';
 import { Transaction } from '../components/ui/AddTransactionModal/AddTransactionModal';
 export const getMoneyString = (amount: number): string => {
   return new Intl.NumberFormat('en-US', {
@@ -13,7 +10,7 @@ export const getMoneyString = (amount: number): string => {
 };
 
 export interface MonthlySummary {
-  month: string; // "YYYY-MM"
+  month: string; // "yyyy-mm"
   totalBalance: number;
   totalPeriodChange: number;
   totalPeriodExpenses: number;
@@ -32,7 +29,7 @@ export function calculateMonthlySummaries(
   transactions: Transaction[]
 ): MonthlySummary[] {
   const monthlySummaries: { [key: string]: MonthlySummary } = {};
-  let previousBalance = 0;
+  let currentBalance = 0;
 
   const sortedTransactions = sortByDate(transactions);
 
@@ -42,7 +39,7 @@ export function calculateMonthlySummaries(
     if (!monthlySummaries[month]) {
       monthlySummaries[month] = {
         month,
-        totalBalance: previousBalance,
+        totalBalance: currentBalance,
         totalPeriodChange: 0,
         totalPeriodExpenses: 0,
         totalPeriodIncome: 0,
@@ -55,13 +52,13 @@ export function calculateMonthlySummaries(
       summary.totalBalance += transaction.amount;
       summary.totalPeriodChange += transaction.amount;
       summary.totalPeriodIncome += transaction.amount;
+      currentBalance += transaction.amount;
     } else if (transaction.action === 'withdraw') {
       summary.totalBalance -= transaction.amount;
       summary.totalPeriodChange -= transaction.amount;
       summary.totalPeriodExpenses += transaction.amount;
+      currentBalance -= transaction.amount;
     }
-
-    previousBalance = summary.totalBalance;
   });
 
   return Object.values(monthlySummaries).sort((a, b) =>
@@ -78,25 +75,30 @@ export function calculateDailyBalance(
   const timeline: string[] = [];
   let currentBalance = 0;
 
+  const balanceChanges: { [date: string]: number } = {};
+
   sortedTransactions.forEach((transaction) => {
     const dateKey = transaction.date.toISOString().split('T')[0]; // "yyyy-mm-dd"
 
-    const existingDay = dailyBalances.find((day) => day.date === dateKey);
-    if (existingDay) {
-      if (transaction.action === 'deposit') {
-        existingDay.balance += transaction.amount;
-      } else if (transaction.action === 'withdraw') {
-        existingDay.balance -= transaction.amount;
-      }
-    } else {
-      if (transaction.action === 'deposit') {
-        currentBalance += transaction.amount;
-      } else if (transaction.action === 'withdraw') {
-        currentBalance -= transaction.amount;
-      }
-      dailyBalances.push({ date: dateKey, balance: currentBalance });
-      timeline.push(dateKey);
+    if (!balanceChanges[dateKey]) {
+      balanceChanges[dateKey] = 0;
     }
+
+    if (transaction.action === 'deposit') {
+      balanceChanges[dateKey] += transaction.amount;
+    } else if (transaction.action === 'withdraw') {
+      balanceChanges[dateKey] -= transaction.amount;
+    }
+  });
+
+  const sortedDates = Object.keys(balanceChanges).sort((a, b) =>
+    a.localeCompare(b)
+  );
+
+  sortedDates.forEach((date) => {
+    currentBalance += balanceChanges[date];
+    dailyBalances.push({ date, balance: currentBalance });
+    timeline.push(date);
   });
 
   return { dailyBalances, timeline };
@@ -107,3 +109,9 @@ export const getPreviousMonth = (currentMonth: string): string => {
   date.setMonth(date.getMonth() - 1);
   return date.toISOString().slice(0, 7);
 };
+
+export function formatDateLabelShort(dateStr: string) {
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return dateStr;
+  return `${date.getDate()} ${date.toLocaleString('en', { month: 'short' })}`;
+}

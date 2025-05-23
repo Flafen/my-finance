@@ -5,14 +5,16 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faDoorOpen, faWallet, faCog } from '@fortawesome/free-solid-svg-icons';
 import user from '../../../assets/photo/i.webp';
 import { Link } from 'react-router-dom';
+import { useAppDispatch } from '../../../utils/hooks';
+import { logout } from '../../../store/slices/authSlice';
 
 export default function DropdownUserMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const dispatch = useAppDispatch();
 
-  const toggleMenu = () => {
-    console.log(isOpen);
-    setIsOpen(!isOpen);
+  const handleLogout = () => {
+    dispatch(logout());
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -37,7 +39,9 @@ export default function DropdownUserMenu() {
       className={styles.dropdown}
     >
       <FontAwesomeIcon
-        onClick={toggleMenu}
+        onClick={() => {
+          setIsOpen((prev) => !prev);
+        }}
         style={{ cursor: 'pointer' }}
         icon={faUser}
       />
@@ -83,7 +87,11 @@ export default function DropdownUserMenu() {
                 Settings
               </Link>
             </li>
-            <li>
+            <li
+              onClick={() => {
+                handleLogout();
+              }}
+            >
               <Link to="/">
                 <FontAwesomeIcon
                   icon={faDoorOpen}

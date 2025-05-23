@@ -58,10 +58,25 @@ const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
     setShowModal(false);
   };
 
+  const categories = [
+    'Food',
+    'Transport',
+    'Healthcare',
+    'Education',
+    'Shops',
+    'Entertainment',
+    'Other',
+  ];
+
+  const handleClose = () => {
+    reset();
+    setShowModal(false);
+  };
+
   return (
     <Modal
       show={showModal}
-      onHide={() => setShowModal(false)}
+      onHide={handleClose}
       centered
       contentClassName={styles.modalContent}
       backdropClassName={styles.modalBackdrop}
@@ -70,7 +85,15 @@ const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
         closeButton
         className={styles.modalHeader}
       >
-        <Modal.Title>Add Transaction</Modal.Title>
+        <Modal.Title>
+          <span
+            role="img"
+            aria-label="add"
+          >
+            ➕
+          </span>{' '}
+          Add Transaction
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form onSubmit={handleSubmit(onSubmit)}>
@@ -127,17 +150,18 @@ const AddTransactionModal: React.FC<AddTransactionModalProps> = ({
               className={styles.selectField}
             >
               <option value="">Select a category</option>
-              <option value="Food">Food</option>
-              <option value="Transport">Transport</option>
-              <option value="Healthcare">Healthcare</option>
-              <option value="Education">Education</option>
-              <option value="Shops">Shops</option>
-              <option value="Entertainment">Entertainment</option>
-              <option value="Other">Other</option>
+              {categories.map((cat) => (
+                <option
+                  key={cat}
+                  value={cat}
+                >
+                  {cat}
+                </option>
+              ))}
             </Form.Select>
           </Form.Group>
 
-          <div className="d-flex justify-content-end gap-2">
+          <div className="d-flex justify-content-around gap-2">
             <Button
               variant="secondary"
               onClick={() => setShowModal(false)}
